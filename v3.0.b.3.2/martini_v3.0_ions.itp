@@ -1,0 +1,108 @@
+;;; IONS
+;
+;;;;;; HYDRATED SODIUM ION
+;
+; same particle type would represent HYDRATED POTASSIUM
+
+[moleculetype]
+; molname 	nrexcl
+  NA 		1
+
+[atoms]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	Q1 	1 	ION 	NA 	1 	1.0 
+
+
+;;;;;; HYDRATED CHLORIDE ION
+
+[moleculetype]
+; molname 	nrexcl
+   CL 		1
+
+[atoms]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	Q1 	1 	ION 	 CL 	1 	-1.0 
+
+
+;;;;;; SEMI-HYDRATED SODIUM ION
+
+[moleculetype]
+; molname 	nrexcl
+  SNA 		1
+
+[atoms]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	SQ1 	1 	ION 	NA 	1 	1.0 
+
+;;;;;; SEMI-HYDRATED CHLORIDE ION
+
+
+[moleculetype]
+; molname 	nrexcl
+  SCL 		1
+
+[atoms]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	SQ1 	1 	ION 	CL 	1 	-1.0
+
+
+;;;;;; DEHYDRATED SODIUM ION
+
+[moleculetype]
+; molname 	nrexcl
+  TNA 		1
+
+[atoms]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	TQ1 	1 	ION 	NA 	1 	1.0 
+
+
+;;;;;; DEHYDRATED CHLORIDE ION
+
+[moleculetype]
+; molname 	nrexcl
+  TCL 		1
+
+[atoms]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	TQ1 	1 	ION 	CL 	1 	-1.0
+
+
+;;;;;; CHOLINE ION 
+
+[moleculetype]
+; molname 	nrexcl
+  NC3 		1
+
+[atoms]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	Q0 	1 	ION 	NC3 	1 	1.0
+
+[moleculetype]
+; molname 	nrexcl
+  CA 		1
+
+[atoms]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	Q2 	1 	ION 	CA 	1 	2.0 
+
+
+[moleculetype]
+; molname 	nrexcl
+  SCA 		1
+
+[atoms]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	SQ2 	1 	ION 	CA 	1 	2.0 
+
+;;;;;; DEHYDRATED SODIUM ION
+
+[moleculetype]
+; molname       nrexcl
+  TCA           1
+
+[atoms]
+;id     type    resnr   residu  atom    cgnr    charge
+ 1      TQ2    1       ION      CA     1       2.0 
+
+

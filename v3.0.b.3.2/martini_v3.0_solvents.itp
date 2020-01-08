@@ -1,0 +1,619 @@
+;;;;;; WATER (representing 4 H2O molecules)
+
+[ moleculetype ]
+; molname  	nrexcl
+  WN  	    	1
+
+[ atoms ]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	WN  	1 	WN  	WN 	1 	0 
+
+[ moleculetype ]
+; molname  	nrexcl
+  WS  	    	1
+
+[ atoms ]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	WS  	1 	WS  	WS 	1 	0 
+
+[ moleculetype ]
+; molname  	nrexcl
+  WT 	    	1
+
+[ atoms ]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	WT 	1 	WT 	WT 	1 	0 
+
+;;;;;; DODECANE
+
+[ moleculetype ]
+; molname 	nrexcl
+  DD41 		1
+
+[ atoms ]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge
+  1       C1 	1 	DD41 	DD1 	1 	0 
+  2       C1 	1 	DD41 	DD2	2 	0
+  3       C1 	1 	DD41 	DD3	3 	0 
+
+[ bonds ]
+; i j 	funct 	length 	force.c.
+  1 2 	1 	0.47 	1250
+  2 3 	1 	0.47	1250
+
+[ angles ]
+; i j k 	funct 	angle 	force.c.
+  1 2 3 	2 	180.0 	25.0
+
+
+[moleculetype]
+; molname 	nrexcl
+  DD31 		1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge
+  1     SC2 	1 	DD31 	DD1 	1 	0 
+  2     SC2 	1 	DD31 	DD2	2 	0
+  3     SC2 	1 	DD31 	DD3	3 	0 
+  4     SC2 	1 	DD31 	DD4	4 	0  
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2 	1 	0.400 	2500 ; 13% bigger than AA mapping
+  2 3 	1 	0.400	2500
+  3 4 	1 	0.400	2500
+;  1 2 	1 	0.430 	2500 
+;  2 3 	1 	0.430	2500
+;  3 4 	1 	0.430	2500
+
+[angles]
+; i j k 	funct 	angle 	force.c.
+  1 2 3 	2 	170.0 	100.0 
+  2 3 4 	2	170.0 	100.0 
+;  1 2 3 	2 	150.0 	100.0 
+;  2 3 4 	2	150.0 	100.0 
+
+[dihedrals]
+;  1   2   3   4   3    9.28   12.16    -13.12    -3.06    26.24    -31.5
+
+[moleculetype]
+; molname 	nrexcl
+  DD21 		1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge
+  1    TC2  	1 	DD21 	DD1 	1 	0 
+  2    TC2  	1 	DD21 	DD2	2 	0
+  3    TC2  	1 	DD21 	DD3	3 	0 
+  4    TC2  	1 	DD21 	DD4	4 	0  
+  5    TC2  	1 	DD21 	DD5	5 	0  
+  6    TC2  	1 	DD21 	DD6	6 	0  
+
+[bonds]
+; i j 	funct 	length 	force.c.
+;  1 2 	1 	0.330 	5000  
+;  2 3 	1 	0.330	5000
+;  3 4 	1 	0.330   5000
+;  4 5 	1 	0.330   5000
+;  5 6 	1 	0.330   5000
+  1 2 	1 	0.312 	5000 ; 27% bigger than AA mapping
+  2 3 	1 	0.312	5000
+  3 4 	1 	0.312   5000
+  4 5 	1 	0.312   5000
+  5 6 	1 	0.312   5000
+
+[angles]
+; i j k 	funct 	angle 	force.c.
+;  1 2 3 	10 	120.0 	500.0 
+;  2 3 4 	10	120.0 	500.0 
+;  3 4 5 	10	120.0 	500.0 
+;  4 5 6 	10	120.0 	500.0 
+;  1 2 3 	2 	120.0 	500.0 
+;  2 3 4 	2	120.0 	500.0 
+;  3 4 5 	2	120.0 	500.0 
+;  4 5 6 	2	120.0 	500.0
+  1 2 3 	2 	180.0 	30.0 
+  2 3 4 	2 	180.0 	30.0 
+  3 4 5 	2 	180.0 	30.0 
+  4 5 6 	2 	180.0 	30.0 
+
+[dihedrals]
+;  1   2   3   4   3      9.28   12.16    -13.12    -3.06    26.24    -31.5
+;  2   3   4   5   3      9.28   12.16    -13.12    -3.06    26.24    -31.5
+;  3   4   5   6   3      9.28   12.16    -13.12    -3.06    26.24    -31.5
+
+;;;;;; HEXADECANE
+
+[moleculetype]
+; molname 	nrexcl
+  HD 		1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge
+  1 	C1 	1 	HD 	C 	1 	0 
+  2 	C1 	1 	HD 	C 	2 	0 
+  3 	C1 	1 	HD 	C 	3 	0 
+  4 	C1 	1 	HD 	C 	4 	0 
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2 	1 	0.47 	1250
+  2 3 	1 	0.47 	1250
+  3 4 	1 	0.47 	1250
+
+[angles]
+; i j k 	funct 	angle 	force.c.
+  1 2 3 	2 	180.0 	25.0 
+  2 3 4 	2 	180.0 	25.0 
+
+;;;;;; CHLOROFORM 
+
+[moleculetype]
+; molname 	nrexcl
+  CLF 		1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge
+  1 	X2 	1 	CLF 	CX 	1 	0 
+
+;;;;;; OCTANOL
+
+[moleculetype]
+; molname 	nrexcl
+  OCO 		1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge
+  1 	N3 	1 	OCO 	PC 	1 	0 
+  2 	C1 	1 	OCO 	C 	2 	0 
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2 	1 	0.47 	1250
+
+[moleculetype]
+; molname 	nrexcl
+  OCOS 		1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge
+  1     SC2 	1 	OCOS 	C1 	1 	0 
+  2     SC2 	1 	OCOS 	C2	2 	0
+  3     SP1 	1 	OCOS 	PC	3 	0 
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2 	1 	0.395 	2500
+  2 3 	1 	0.385	2500
+[angles]
+  1 2 3         2       150.0   100.0
+
+;;;;;; ETHER 
+
+[moleculetype]
+; molname 	nrexcl
+  ETH 		1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge
+  1 	N0 	1 	ETH 	CO 	1 	0 
+
+;;;;;; BENZENE
+
+[moleculetype]
+; molname       nrexcl
+  BENZ 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	TC4 	1 	BENZ 	R1 	1 	0 
+  2 	TC4 	1 	BENZ 	R2 	2 	0 
+  3 	TC4 	1 	BENZ 	R3 	3 	0 
+
+[constraints]
+; i j   funct   length
+  1 2 	1 	0.291 ;
+  2 3 	1 	0.291
+  1 3 	1 	0.291
+
+
+;;;;;; PHENOL
+
+[moleculetype]
+; molname       nrexcl
+  PHEN 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	TC4 	1 	PHEN 	R1 	1 	0 
+  2 	TC4 	1 	PHEN 	R2 	2 	0 
+  3 	TN3 	1 	PHEN 	R3 	3 	0 
+
+[constraints]
+; i j   funct   length
+  1 2 	1 	0.285 
+  2 3 	1 	0.295
+  1 3 	1 	0.295
+
+[moleculetype]
+; molname       nrexcl
+  PYRI 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	TC4 	1 	PYRI 	R1 	1 	0 
+  2 	TC4 	1 	PYRI 	R2 	2 	0 
+  3 	TN3a	1 	PYRI 	R3 	3 	0 
+
+[constraints]
+; i j   funct   length
+  1 2 	1 	0.285 
+  2 3 	1 	0.275
+  1 3 	1 	0.275
+
+;;;;;; Cyclopentanone
+
+[moleculetype]
+; molname       nrexcl
+  CYPE 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	SC3 	1 	CYPE 	R1 	1 	0 
+  2 	TN3a	1 	CYPE 	R2 	2 	0  
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2   1       0.32     5000 ;
+
+;;;;;; CYCLOHEXANE
+
+[moleculetype]
+; molname       nrexcl
+  CHEX 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	SC3 	1 	CHEX 	R1 	1 	0 
+  2 	SC3 	1 	CHEX 	R2 	2 	0  
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2   1       0.390     5000 ;
+
+;;;;;; CYCLOHEXANE
+
+[moleculetype]
+; molname       nrexcl
+  CHE2 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	SC2 	1 	CHE2 	R1 	1 	0 
+  2 	SC2 	1 	CHE2 	R2 	2 	0  
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2   1       0.390     5000 ;
+
+[moleculetype]
+; molname       nrexcl
+  DIOX 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	SN1a 	1 	DIOX 	R1 	1 	0 
+  2 	SN1a 	1 	DIOX 	R2 	2 	0  
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2   1       0.370     5000 ;
+
+;;;;;; THF
+
+[moleculetype]
+; molname       nrexcl
+  THF 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	SC3 	1 	THF 	R1 	1 	0 
+  2 	TN2a 	1 	THF 	R2 	2 	0  
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2   1       0.300     5000 ;
+
+;;;;;; THP
+
+[moleculetype]
+; molname       nrexcl
+  THP 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	SC3 	1 	THP 	R1 	1 	0 
+  2 	SN2a 	1 	THP 	R2 	2 	0  
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2   1       0.380     5000 ;
+
+;;;;;; IMIDAZOLE
+
+[moleculetype]
+; molname       nrexcl
+  IMI 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	TC4 	1 	IMI 	R1 	1 	0 
+  2 	TN3d	1 	IMI 	R2 	2 	0 
+  3 	TN3a	1 	IMI 	R3 	3 	0 
+
+[constraints]
+; i j   funct   length
+  1 2 	1 	0.265 
+  2 3 	1 	0.265
+  1 3 	1 	0.270
+
+;;;;;; IMIDAZOLE
+
+[moleculetype]
+; molname       nrexcl
+  IM4 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	SC3 	1 	IMI 	R1 	1 	0 
+  2 	TN3d	1 	IMI 	R2 	2 	0 
+  3 	TN3a	1 	IMI 	R3 	3 	0 
+
+[constraints]
+; i j   funct   length
+  1 2 	1 	0.290
+  2 3 	1 	0.275
+  1 3 	1 	0.290
+
+;;;;;; THIOPHENE
+
+[moleculetype]
+; molname       nrexcl
+  THIO		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	TC5 	1 	THIO	R1 	1 	0 
+  2 	TC4	1 	THIO	R2 	2 	0 
+  3 	TC4	1 	THIO	R3 	3 	0 
+
+[constraints]
+; i j   funct   length
+  1 2 	1 	0.270
+  2 3 	1 	0.280
+  1 3 	1 	0.270 
+
+;;;;;; 1,2 DICHLOROBENZENE OR  1,3 DICHLOROBENZENE 
+
+[moleculetype]
+; molname       nrexcl
+  DCLB 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	TC4 	1 	DCLB 	R1 	1 	0 
+  2 	SC3 	1 	DCLB 	R2 	2 	0 
+  3 	SC3 	1 	DCLB 	R3 	3 	0 
+
+[constraints]
+; i j   funct   length
+  1 2 	1 	0.315
+  2 3 	1 	0.320
+  1 3 	1 	0.320
+
+;;;;;; CHLOROBENZENE
+
+[moleculetype]
+; molname       nrexcl
+  CLBZ 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	TC4 	1 	CLBZ 	R1 	1 	0 
+  2 	TC4 	1 	CLBZ 	R2 	2 	0 
+  3 	SC3 	1 	CLBZ 	R3 	3 	0 
+
+[constraints]
+; i j   funct   length
+  1 2 	1 	0.280
+  2 3 	1 	0.320
+  1 3 	1 	0.320
+
+
+;;;;;; THIOPHENOL
+
+[moleculetype]
+; molname       nrexcl
+  THPH		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	TC4 	1 	THPH  	R1 	1 	0 
+  2 	TC4 	1 	THPH  	R2 	2 	0 
+  3 	SC5 	1 	THPH  	R3 	3 	0 
+
+[constraints]
+; i j   funct   length
+  1 2 	1 	0.280
+  2 3 	1 	0.320
+  1 3 	1 	0.320 
+
+
+;;;;;; P-CRESOL
+
+[moleculetype]
+  PCRE 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	TP1 	1 	PCR 	P1 	1 	0 
+  2 	TC4 	1 	PCR 	R2 	2 	0 
+  3 	TC4 	1 	PCR 	R3 	3 	0 
+  4 	TC3 	1 	PCR 	R4 	4 	0 
+
+[constraints]
+; i j   funct   length
+  1 2 	1 	0.295
+  1 3 	1 	0.295
+  2 4 	1 	0.295
+  3 4   1       0.295
+  3 2   1       0.285
+
+[dihedrals]
+; i j k l  funct  ref.angle   force_k
+  1 2 3 4    2      180          100
+
+;;;;;; phenylalanine
+
+[moleculetype]
+; molname       nrexcl
+  TOLU 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	SC3 	1 	TOL 	R1 	1 	0 
+  2 	TC4 	1 	TOL 	R2 	2 	0 
+  3 	TC4 	1 	TOL 	R3 	3 	0 
+
+[constraints]
+; i j   funct   length
+  1 2 	1 	0.300
+  2 3 	1 	0.285
+  1 3 	1 	0.300
+
+;;;;;; tryptophan
+
+[moleculetype]
+; molname       nrexcl
+  MIND 		4
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge  mass
+  1 	TC4 	1 	MIN 	R1 	1 	0        45
+  2 	TC4 	1 	MIN 	R2 	2 	0        45
+  3 	TC4 	1 	MIN 	R3 	3 	0        0
+  4     TN3d    1       MIN     N1      4       0        45 
+  5     TC4     1       MIN     R4      5       0        45
+
+[constraints]
+; i j   funct   length
+  1 4 	1 	0.369
+  1 2   1       0.293
+  2 5   1       0.374
+  4 5   1       0.293
+
+[dihedrals]
+;  i     j    k    l   funct   angle  force.c.
+   1     2    4    5      2    180.0    50.0   
+  
+[ virtual_sitesn ]
+; site funct  constructing atom indices
+   3    2       1 2 4 5
+
+;;;;;; tryptophan
+
+[moleculetype]
+; molname       nrexcl
+  INDO		4
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge  mass
+  1 	TC4 	1 	IND	R1 	1 	0        45
+  2 	TC4 	1 	IND	R2 	2 	0        45
+  3 	TC5 	1 	IND	R3 	3 	0        0
+  4     TN3d    1       IND     N1      4       0        45 
+  5     TC5     1       IND     R4      5       0        45
+
+[constraints]
+; i j   funct   length
+  1 4 	1 	0.369
+  1 2   1       0.293
+  2 5   1       0.374
+  4 5   1       0.257
+
+[dihedrals]
+;  i     j    k    l   funct   angle  force.c.
+   1     2    4    5      2    180.0    200.0   
+  
+[ virtual_sitesn ]
+; site funct  constructing atom indices
+   3    2       1 2 4 5
+
+
+;;;;;; Propyl-benzene
+
+[moleculetype]
+; molname       nrexcl
+  PBEN 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	TC4 	1 	PBEN 	R1 	1 	0 
+  2 	TC4 	1 	PBEN 	R2 	2 	0 
+  3 	TC4 	1 	PBEN 	R3 	3 	0 
+  4 	SC2 	1 	PBEN 	R4 	3 	0 
+
+[bonds]
+  2 4 	1 	0.34 	5000
+  3 4 	1 	0.34 	5000
+
+[constraints]
+; i j   funct   length
+  1 2 	1 	0.291 
+  2 3 	1 	0.291
+  1 3 	1 	0.291
+
+[dihedrals]
+; i j k l  funct  ref.angle   force_k
+  1 2 3 4    2      180          20
+
+[exclusions]
+ 1 4 2 4 3 4
+
+[moleculetype]
+; molname       nrexcl
+  DXE 		1
+
+[atoms]
+; id    type    resnr   residu  atom    cgnr    charge
+  1 	SN1a 	1 	DXE 	R1 	1 	0 
+  2 	SN1a 	1 	DXE 	R2 	2 	0  
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2   1       0.365     7000 ;
+
+;;;;;; Propanol
+
+[ moleculetype ]
+; molname  	nrexcl
+  POL 	    	1
+
+[ atoms ]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge
+ 1 	N3 	1 	POL 	POL 	1 	0 
+
+;;;;;; OCTANE
+
+[moleculetype]
+; molname 	nrexcl
+  OCT 		1
+
+[atoms]
+; id 	type 	resnr 	residu 	atom 	cgnr 	charge
+  1 	C1 	1 	OCT 	C 	1 	0 
+  2 	C1 	1 	OCT 	C 	2 	0 
+
+[bonds]
+; i j 	funct 	length 	force.c.
+  1 2 	1 	0.47 	1250

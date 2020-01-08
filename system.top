@@ -1,0 +1,13 @@
+#include "v3.0.b.3.2/martini_v3.0.b.3.2.itp"
+#include "v3.0.b.3.2/martini_v3.0_solvents.itp"
+#include "v3.0.b.3.2/martini_v3.0_ions.itp"
+#include "lysoPEG.itp"
+
+
+[system]
+; name
+INSANE! Membrane UpperLeaflet>DIPC=1 LowerLeaflet>DIPC=1
+
+[ molecules ]
+; name  number
+lysoPEG       1
