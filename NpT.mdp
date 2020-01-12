@@ -84,7 +84,7 @@ rvdw                     = 1.1
 tcoupl                   = v-rescale 
 tc-grps                  = system
 tau_t                    = 1.0 
-ref_t                    = 300
+ref_t                    = 310
 Pcoupl                   = Parrinello-Rahman
 Pcoupltype               = isotropic
 tau_p                    = 12.0    ;parrinello-rahman is more stable with larger tau-p, DdJ, 20130422
@@ -92,7 +92,7 @@ compressibility          = 4.5e-5
 ref_p                    = 1.0
 refcoord-scaling         = no
 gen_vel                  = no
-gen_temp                 = 300
+gen_temp                 = 310
 gen_seed                 = 473529
 
 ; MARTINI and CONSTRAINTS 
