@@ -8,7 +8,7 @@
 
 integrator               = md
 dt                       = 0.02
-nsteps                   = 500000
+nsteps                   = 100000000
 nstcomm                  = 100
 comm-grps		 = 
 
@@ -85,7 +85,7 @@ tcoupl                   = v-rescale
 tc-grps                  = system
 tau_t                    = 1.0 
 ref_t                    = 300
-Pcoupl                   = no
+Pcoupl                   = Parrinello-Rahman
 Pcoupltype               = isotropic
 tau_p                    = 12.0    ;parrinello-rahman is more stable with larger tau-p, DdJ, 20130422
 compressibility          = 4.5e-5
