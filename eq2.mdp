@@ -5,9 +5,9 @@
 
 ; TIMESTEP IN MARTINI 
 ; Default timestep of 20 fs. 
-integrator               = sd
+integrator               = md
 dt                       = 0.02
-nsteps                   = 500000
+nsteps                   = 1000000
 nstcomm                  = 100
 comm-grps	         = 
 
