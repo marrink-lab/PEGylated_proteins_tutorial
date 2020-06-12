@@ -1,4 +1,4 @@
 [ moleculetype ]
-CH2OH 1
+OHend 1
 [ atoms ]
-1   TP1    1   PEO  OH  1  0.000  36
+1   TP1    1   OHend  OH  1  0.000  36
